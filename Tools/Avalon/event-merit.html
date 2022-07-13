@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Merit Quest</title>
+	<link rel="shortcut icon" type="image/x-icon" href="event-merit-16x16.ico">
+</head>
+<body>
+	<main>
+		<h2>Total kills -> # of Games Calculator</h2>
+		<section id="kills-calculator">
+			<form id="kills-inputs">
+				<label>Kills Goal <input type="number" name="kills-goal" value="200" min="0" max="999999"></label>
+                <label>Kills per round<input type="number" name="kills-per-round" value="7" min="0" max="7"></label>
+			</form>
+            <!-- <p><span id="number-of-kill-games">21</span> Games</p> -->
+			<p id="number-of-kill-games">21 Games</p>
+		</section>
+
+		<h2>Total Games Playtime Calculator</h2>
+        <section id="playtime-calculator">
+            <form id="playtime-inputs">
+				<label>Playtime Goal <input type="number" name="playtime-goal" value="4" min="0" max="999999"> Hours</label>
+				<br>
+				<label>Round Seconds <input type="number" name="round-seconds" value="999" min="1" max="999"></label>
+                <label>Rounds per game <input type="number" name="rounds" value="1" step="1" min="1" max="3" >
+			</form>
+			<p><span id="playtime-games"></span> Games (<span id="playtime-last-time"></span> - earliest time the last game can be ended)</p>
+		</section>
+
+		<h2>Merit Calculator</h2>
+		<section id="merit-calculator">
+			<form id="merit-inputs">
+				<label>Current progress <input type="number" name="merit-progress" value="980" min="0" max="9999"></label>
+				<select id="merit-quests-list">
+					<option value=1 selected>Rock Collector</option>
+					<option value=2>Master Counter</option>
+					<option value=3>Master Construction Worker</option>
+				</select>
+			</form>
+			<p id="merit-finish">Finish in <span id="merit-days">376</span> days (<span id="merit-date">7/24/2023</span> earliest)</p>
+			<p id="merit-note">Based on 24 maximum daily rune earnings.</p>
+		</section>
+        
+	</main>
+
+	<nav><a href="index.html"><img src="img/avalon_driver.png"> Avalon</a>
+		<a href="spenders.html"><img src="img/carat.png"> Spenders</a>
+		<img src="img/merit.png"> <span class="current"> Events/Merit</span>
+	</nav>
+	<footer><a href="https://streamlabs.com/pickacolor" target="_blank">Support? :D</a> © 2021 Gasp </footer>
+	<script type="text/javascript" src="event-merit.js"></script>
+</body>
+</html>

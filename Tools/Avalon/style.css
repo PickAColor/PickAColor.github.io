@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #000B22;
+}
+
+body a {
+    text-decoration: none;
+}
+
+nav {
+    display: inline;
+}
+
+nav > a {
+    color: white;
+}
+
+nav a:hover {
+    text-shadow:1px 1px 10px #fff, 1px 1px 5px #ccc;
+}
+
+nav .current {
+    font-weight: bold;
+}
+
+
+footer a {
+    font-style: italic;
+    color: rgb(135, 226, 135);
+}
+
+footer a:hover {
+    text-shadow:1px 1px 5px #fff;
+}
