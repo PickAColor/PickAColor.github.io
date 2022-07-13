@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Spenders</title>
+	<link rel="shortcut icon" type="image/x-icon" href="spenders-16x16.ico">
+</head>
+<body>
+	<main>
+		<h1>Spenders Calculator<br><span>for buying then reselling</span></h1>
+		<section id="spenders-calculator">
+			<form id="spenders-inputs">
+				<label>Spenders Goal <input type="number" name="spenderGoal" value="200000" min="0" max="9999999"></label>
+				<label>Item Price <input type="number" name="itemPrice" value="2500" min="0" max="9999999"></label>
+				<label>Resell Price <input type="number" name="itemResellPrice" value="1375" min="0" max="999999"></label>
+			</form>
+		</section>
+		<section id="spenders-result">
+			<p><span id="carats-needed">2500</span> Carats needed.</p>
+			<p><span id="numItemPurchases"></span> × purchases need to be made.</p>
+			<p><span id="numItemGifted"></span> × (<span id="numItemGifted-carats"></span> Carats) needed to be gifted to have enough.</p>
+		</section>
+	</main>
+
+	<nav><a href="index.html"><img src="img/avalon_driver.png"> Avalon</a>
+		<img src="img/carat.png"> <span class="current">Spenders</span>
+		<a href="event-merit.html"><img src="img/merit.png"> Events/Merit</a>
+	</nav>
+	<footer><a href="https://streamlabs.com/pickacolor" target="_blank">Support? :D</a> © 2021 Gasp </footer>
+	<script type="text/javascript" src="spenders.js"></script>
+</body>
+</html>
