@@ -129,7 +129,7 @@ const meritQuestSet = (quest) => {
             meritQuestNote = `Based on 24 maximum daily rune earnings.`;
             meritDailyLimit();
             break;
-
+            
         case "Master Counter": 
             meritQuest = "Master Counter";
             meritGoal = 10000;
